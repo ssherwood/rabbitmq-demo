@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    username: rabbit
+    password: rabbit
+    template:
+      retry:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+info:
+  user: ${USER}

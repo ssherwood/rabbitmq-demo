@@ -1,0 +1,22 @@
+version: '3'
+
+##
+## per https://github.com/bitnami/bitnami-docker-rabbitmq
+## access: http://localhost:15672
+##
+services:
+  rabbitmq:
+    image: 'bitnami/rabbitmq:3.8'
+    ports:
+      - '4369:4369'
+      - '5672:5672'
+      - '25672:25672'
+      - '15672:15672'
+    environment:
+      - 'RABBITMQ_USERNAME=rabbit'
+      - 'RABBITMQ_PASSWORD=rabbit'
+    volumes:
+      - 'rabbitmq_data:/bitnami'
+volumes:
+  rabbitmq_data:
+    driver: local
