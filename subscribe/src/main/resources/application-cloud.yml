@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    username: rabbit
+    password: rabbit
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
+  endpoint:
+    health:
+      show-details: when_authorized
+info:
+  user: ${USER}

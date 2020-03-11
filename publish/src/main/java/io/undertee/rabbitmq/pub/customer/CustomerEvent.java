@@ -1,4 +1,4 @@
-package io.undertree.rabbitmqpublish;
+package io.undertee.rabbitmq.pub.customer;
 
 
 import com.devskiller.jfairy.Fairy;

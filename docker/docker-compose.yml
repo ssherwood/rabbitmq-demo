@@ -1,5 +1,4 @@
 version: '3'
-
 ##
 ## per https://github.com/bitnami/bitnami-docker-rabbitmq
 ## access: http://localhost:15672
