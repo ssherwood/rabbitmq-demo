@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>publish</module>
-        <module>subscribe</module>
+        <module>publisher</module>
+        <module>consumer</module>
     </modules>
 </project>

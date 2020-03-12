@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-import static io.undertree.rabbitmq.sub.RabbitMQSubscriber.CUSTOMER_CREATE_QUEUE;
+import static io.undertree.rabbitmq.sub.customer.CustomerQueueBindingTopology.CUSTOMER_CREATE_QUEUE;
 
 @Service
 public class CustomerCreateConsumer {
@@ -28,6 +28,7 @@ public class CustomerCreateConsumer {
         System.out.println("   Headers = " + headers);
         System.out.println("   Header 'foo' = " + header);
 
-        // TODO: presumably you'll do something with the customer object...
+        // TODO: presumably you'll actually do something with the customer object...
+        // send an email to the customer?
     }
 }

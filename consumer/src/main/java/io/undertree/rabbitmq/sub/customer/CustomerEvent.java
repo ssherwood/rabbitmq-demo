@@ -3,6 +3,9 @@ package io.undertree.rabbitmq.sub.customer;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 
+/**
+ * Simple POJO representing a Customer event
+ */
 public class CustomerEvent {
     private String firstName;
     private String lastName;
